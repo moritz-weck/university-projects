@@ -5,11 +5,11 @@
 This repository contains the larger projects I completed during my university studies.  
 There are currently three projects in the repository:
 
-### • 03/2024 – Object-Oriented Programming – Programming in C: *Dart Game*
+### • 03/2024 – Objektorientiertes Programmieren – Programmieren in C: *Dart Game*
 Together with a team of four, we demonstrated foundational skills in C by implementing a simple game.  
 The result was a basic two-player dart simulator.
 
-### • 04/2025–07/2025 – Software Project – Algorithm Application: *Visualization of the Series "Dark"*
+### • 04/2025–07/2025 – Softwareprojekt – Anwendung von Algorithmen: *Visualization of the Series "Dark"*
 Based on a dataset of nodes and edges, our team of seven selected a suitable theme and created a clear and informative visualization of the dataset.
 
 ### • 11/2025 – Design of Game Software: *One Night at Coffees*
