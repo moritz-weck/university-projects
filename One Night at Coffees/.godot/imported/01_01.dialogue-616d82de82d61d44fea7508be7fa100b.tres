@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_deyh8"]
+
+[resource]
+script = ExtResource("1_deyh8")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Customer", "You")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Customer",
+&"id": "1",
+&"next_id": "2",
+&"text": "One coffee! And i need it fast!",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Customer",
+&"id": "2",
+&"next_id": "3",
+&"text": "Oh wait, who are you? I haven't seen you here before.",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Customer",
+&"id": "3",
+&"next_id": "4",
+&"text": "Whatever, just bring me my coffee, I am in a hurry.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Customer",
+&"id": "4",
+&"next_id": "5",
+&"text": "And don't add anything which I can be allergic to!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "You",
+&"id": "5",
+&"next_id": "6",
+&"text": "But how can I know-",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Customer",
+&"id": "6",
+&"next_id": "7",
+&"text": "Fast! Didn't you hear me?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Customer",
+&"id": "7",
+&"next_id": "8",
+&"text": "Don't talk to me just give me what I asked for!",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Customer: One coffee! And i need it fast!
+Customer: Oh wait, who are you? I haven't seen you here before.
+Customer: Whatever, just bring me my coffee, I am in a hurry.
+Customer: And don't add anything which I can be allergic to!
+You: But how can I know-
+Customer: Fast! Didn't you hear me?
+Customer: Don't talk to me just give me what I asked for!
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

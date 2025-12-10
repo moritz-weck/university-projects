@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_wxkht"]
+
+[resource]
+script = ExtResource("1_wxkht")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Customer", "You")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Customer",
+&"id": "1",
+&"next_id": "2",
+&"text": "010100101001010.",
+&"type": "dialogue"
+},
+"2": {
+&"character": "You",
+&"id": "2",
+&"next_id": "3",
+&"text": "Huh?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Customer",
+&"id": "3",
+&"next_id": "4",
+&"text": "Oh sorry. I haven’t slept in a week. I have been working on a project for several days non-stop. I work so much, sometimes I don't even feel human anymore, I am just a 01010010101010.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Customer",
+&"id": "4",
+&"next_id": "5",
+&"text": "Nevermind. Can I get 01001111 01101110 01100101 00100000 01100011 01101111 01100110 01100110 01100101 01100101 with 01010100 01110111 01101111 00100000 01101101 01101001 01101100 01101011 01110000 01110101 01101101 01110000 01110011? Fast please.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "You",
+&"id": "5",
+&"next_id": "6",
+&"text": "Sure.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Customer: 010100101001010.
+You: Huh?
+Customer: Oh sorry. I haven’t slept in a week. I have been working on a project for several days non-stop. I work so much, sometimes I don't even feel human anymore, I am just a 01010010101010.
+Customer: Nevermind. Can I get 01001111 01101110 01100101 00100000 01100011 01101111 01100110 01100110 01100101 01100101 with 01010100 01110111 01101111 00100000 01101101 01101001 01101100 01101011 01110000 01110101 01101101 01110000 01110011? Fast please.
+You: Sure.
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

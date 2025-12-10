@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_e3xeu"]
+
+[resource]
+script = ExtResource("1_e3xeu")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Customer", "You", "You, thinking")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Customer",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hi, human. I lost my mom. Can you help me find her?",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Customer",
+&"id": "2",
+&"next_id": "3",
+&"text": "She can smell blood. Can I order one cup of blood, so she can find me?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Customer",
+&"id": "3",
+&"next_id": "4",
+&"text": "Oh, right. It's a coffee shop. Can you just add blood in my coffee? Add some of yours please!",
+&"type": "dialogue"
+},
+"4": {
+&"character": "You",
+&"id": "4",
+&"next_id": "5",
+&"text": "Yeah..., sure.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "You, thinking",
+&"id": "5",
+&"next_id": "6",
+&"text": "Maybe I can give her something else that is similar and doesn't include my blood...",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Customer: Hi, human. I lost my mom. Can you help me find her?
+Customer: She can smell blood. Can I order one cup of blood, so she can find me?
+Customer: Oh, right. It's a coffee shop. Can you just add blood in my coffee? Add some of yours please!
+You: Yeah..., sure.
+You, thinking: Maybe I can give her something else that is similar and doesn't include my blood...
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

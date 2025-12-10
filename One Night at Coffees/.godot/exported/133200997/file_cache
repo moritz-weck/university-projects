@@ -1,0 +1,12 @@
+res://addons/dialogue_manager/example_balloon/example_balloon.tscn::48b91f5618c56b43138c165c9293d8c1::312735600::res://.godot/exported/133200997/export-57fc9b32a4ae3d4a3041b46baf4b8f92-example_balloon.scn
+res://addons/dialogue_manager/example_balloon/small_example_balloon.tscn::ad39f864cd724c0ab85c37ccb1b3962b::312735600::res://.godot/exported/133200997/export-25872080cd204f02261b5746b425708f-small_example_balloon.scn
+res://addons/dialogue_manager/dialogue_label.tscn::5087c11b45dfaf8effc779674dfe11e8::312735600::res://.godot/exported/133200997/export-e41b7d5321416240678013b406b79557-dialogue_label.scn
+res://addons/dialogue_manager/test_scene.tscn::5946a9a55ceff988ba46e7f734ff0538::312735600::res://.godot/exported/133200997/export-74a175fe1e216df3bdf79c5c27a2ac2c-test_scene.scn
+res://scenes/3d_scene.tscn::a4aa5ab46db332c2d18d7d05b4c23b1a::1764557977::res://.godot/exported/133200997/export-c2313205cd3cd0fb32dd0c772899dbf8-3d_scene.scn
+res://scenes/balloon.tscn::b634eda8c0ed3ac31b01c65ae3844198::312735600::res://.godot/exported/133200997/export-3e6f38f3611b4dcb7c2b5318d66fcb49-balloon.scn
+res://scenes/cafe_editable.tscn::58c37a157f04fa9be78ad36f53d051e7::1764480076::res://.godot/exported/133200997/export-f882da2e340745ae4e8e9fc9cbf611d0-cafe_editable.scn
+res://scenes/coffee_minigame.tscn::652f238c5afb3bd62cb91ac79f4128ed::1765363713::res://.godot/exported/133200997/export-4ed2a331e7817d1fb13381bd1c143e84-coffee_minigame.scn
+res://scenes/menu.tscn::0304a24b3b7e5cd1dd69692832c8a270::1764567704::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/npc.tscn::61be9c927d95cf2bbf340efabc7ceb10::1764325844::res://.godot/exported/133200997/export-51652f9d5c9453037b2bf9159a453860-npc.scn
+res://scenes/npc_complete.tscn::6249a43e3e69874788fc67c07c00367d::1764494648::res://.godot/exported/133200997/export-b0318a656561f8e378af158fe1dee150-npc_complete.scn
+res://scenes/options.tscn::e46ebd8af3fa9b6441540eae4d702567::1764504223::res://.godot/exported/133200997/export-6d4c40ac84d8b5db02eddff630ade0da-options.scn

@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6537m"]
+
+[resource]
+script = ExtResource("1_6537m")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Customer")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Customer",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hi, sweetie~~",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Customer",
+&"id": "2",
+&"next_id": "3",
+&"text": "I am soooo thirsty, I could even drink someone’s blood right now. Can’t wait any longer~~",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Customer",
+&"id": "3",
+&"next_id": "4",
+&"text": "Bring me coffee with milk fast or I can’t guarantee your safety~~",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"id": "5",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Customer: Hi, sweetie~~
+Customer: I am soooo thirsty, I could even drink someone’s blood right now. Can’t wait any longer~~
+Customer: Bring me coffee with milk fast or I can’t guarantee your safety~~ 
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

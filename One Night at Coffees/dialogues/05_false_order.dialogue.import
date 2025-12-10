@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cco2ljjk8d4m6"
+path="res://.godot/imported/05_false_order.dialogue-dae3ac3e0f5fc47a9a4a93be415ed69a.tres"
+
+[deps]
+
+source_file="res://dialogues/05_false_order.dialogue"
+dest_files=["res://.godot/imported/05_false_order.dialogue-dae3ac3e0f5fc47a9a4a93be415ed69a.tres"]
+
+[params]
+
+defaults=true

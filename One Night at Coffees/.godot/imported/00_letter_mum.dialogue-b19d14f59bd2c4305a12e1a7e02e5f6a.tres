@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pjixy"]
+
+[resource]
+script = ExtResource("1_pjixy")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Letter from Mom", "You")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Letter from Mom",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hello sweetie!",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Letter from Mom",
+&"id": "10",
+&"next_id": "11",
+&"text": "XOXO, Mum.",
+&"type": "dialogue"
+},
+"11": {
+&"character": "You",
+&"id": "11",
+&"next_id": "12",
+&"text": "She left... And its only 50$.",
+&"type": "dialogue"
+},
+"12": {
+&"character": "You",
+&"id": "12",
+&"next_id": "13",
+&"text": "I need to find a job.",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"14": {
+&"id": "14",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "Letter from Mom",
+&"id": "2",
+&"next_id": "3",
+&"text": "Your mom is soooo tired from her ordinary life.",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Letter from Mom",
+&"id": "3",
+&"next_id": "4",
+&"text": "My whole life was just a work-home-work cycle, and I am sure you understand how hard that is.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Letter from Mom",
+&"id": "4",
+&"next_id": "5",
+&"text": "So, I decided to try something new and find some happiness in my life.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Letter from Mom",
+&"id": "5",
+&"next_id": "6",
+&"text": "You remember Jack, right?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Letter from Mom",
+&"id": "6",
+&"next_id": "7",
+&"text": "We are going on a world trip together. I don't think I'll be coming back soon, so this flat is now yours.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Letter from Mom",
+&"id": "7",
+&"next_id": "8",
+&"text": "Don't forget to pay rent!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Letter from Mom",
+&"id": "8",
+&"next_id": "9",
+&"text": "Take care! I'll send you a souvenir!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Letter from Mom",
+&"id": "9",
+&"next_id": "10",
+&"text": "PS: I left some money for you. Have fun!",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Letter from Mom: Hello sweetie!
+Letter from Mom: Your mom is soooo tired from her ordinary life.
+Letter from Mom: My whole life was just a work-home-work cycle, and I am sure you understand how hard that is.
+Letter from Mom: So, I decided to try something new and find some happiness in my life.
+Letter from Mom: You remember Jack, right?
+Letter from Mom: We are going on a world trip together. I don't think I'll be coming back soon, so this flat is now yours.
+Letter from Mom: Don't forget to pay rent!
+Letter from Mom: Take care! I'll send you a souvenir!
+Letter from Mom: PS: I left some money for you. Have fun!
+Letter from Mom: XOXO, Mum.
+You: She left... And its only 50$.
+You: I need to find a job.
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

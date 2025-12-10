@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_clhgn"]
+
+[resource]
+script = ExtResource("1_clhgn")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Customer", "You", "You, thinking")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Customer",
+&"id": "1",
+&"next_id": "2",
+&"text": "Good evening! Can I get a Cappuccino? Thank you!",
+&"type": "dialogue"
+},
+"2": {
+&"character": "You",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yeah..., sure!",
+&"type": "dialogue"
+},
+"3": {
+&"character": "You, thinking",
+&"id": "3",
+&"next_id": "4",
+&"text": "This client looks pretty normal. I guess i was just seeing things.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Customer",
+&"id": "4",
+&"next_id": "5",
+&"text": "Oh, and can you add some worms in it?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "You",
+&"id": "5",
+&"next_id": "6",
+&"text": "What...? But we don't have any.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Customer",
+&"id": "6",
+&"next_id": "7",
+&"text": "Over there! I see the jar.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "You, thinking",
+&"id": "7",
+&"next_id": "8",
+&"text": "Some worm-looking thing inside of a jar?",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Customer: Good evening! Can I get a Cappuccino? Thank you!
+You: Yeah..., sure!
+You, thinking: This client looks pretty normal. I guess i was just seeing things.
+Customer: Oh, and can you add some worms in it?
+You: What...? But we don't have any.
+Customer: Over there! I see the jar.
+You, thinking: Some worm-looking thing inside of a jar?
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

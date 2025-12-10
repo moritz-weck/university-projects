@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://bd6n5vp2kcqij"]
+
+[ext_resource type="Script" uid="uid://cch1yj2sn7eai" path="res://scripts/npc.gd" id="1_dt6c1"]
+[ext_resource type="Script" uid="uid://rxggklcwkagp" path="res://scripts/npc_entrance.gd" id="2_cvc8s"]
+[ext_resource type="Texture2D" uid="uid://xxyuv7p7rxwy" path="res://assets/sprites/npcs/womandog.png" id="3_dt6c1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2ox2i"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_da8xo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_da8xo"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_68u10"]
+
+[node name="NPC" type="CharacterBody3D"]
+script = ExtResource("1_dt6c1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_2ox2i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CapsuleMesh_da8xo")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_da8xo")
+
+[node name="EntranceBehaviour" type="Node3D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_cvc8s")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.0013
+billboard = 1
+texture = ExtResource("3_dt6c1")
+
+[node name="InteractArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractArea"]
+transform = Transform3D(6.29, 0, 0, 0, 6.29, 0, 0, 0, 6.29, 0, 0, 0)
+shape = SubResource("SphereShape3D_68u10")

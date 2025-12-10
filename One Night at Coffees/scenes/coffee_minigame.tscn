@@ -1,0 +1,369 @@
+[gd_scene load_steps=35 format=3 uid="uid://c5bmhdxc6ctns"]
+
+[ext_resource type="Script" uid="uid://dnh3k0e15b5pv" path="res://scripts/coffee_cup.gd" id="1_67dsn"]
+[ext_resource type="Script" uid="uid://bkp1ls3d2s0n6" path="res://scenes/coffee_minigame.gd" id="1_gxvqg"]
+[ext_resource type="Texture2D" uid="uid://cnmc1rwlbt57y" path="res://assets/sprites/coffee_minigame/new_assets/woodbg333.png" id="2_f6eo0"]
+[ext_resource type="Texture2D" uid="uid://bo0uiis45u04h" path="res://assets/sprites/coffee_minigame/new_assets/postit1.png" id="3_1fdbf"]
+[ext_resource type="Script" uid="uid://rhddnemrui5o" path="res://scripts/cup_sprite_2d.gd" id="3_67dsn"]
+[ext_resource type="Script" uid="uid://dur4nbx3r57h8" path="res://scripts/coffee_plate.gd" id="4_67dsn"]
+[ext_resource type="Texture2D" uid="uid://chd6i3juwegla" path="res://assets/sprites/coffee_minigame/new_assets/cupempty.png" id="4_hhtbo"]
+[ext_resource type="Texture2D" uid="uid://dy4ub2gw122s3" path="res://assets/sprites/coffee_minigame/new_assets/postit2.png" id="4_yy6xq"]
+[ext_resource type="Texture2D" uid="uid://cj4sb1ykw8lcx" path="res://assets/sprites/coffee_minigame/new_assets/postit3.png" id="5_lrpmp"]
+[ext_resource type="Script" uid="uid://ck2l1sc1fr5wi" path="res://scripts/coffee_machine.gd" id="6_3u56a"]
+[ext_resource type="Script" uid="uid://dod1p4stvakrr" path="res://scripts/coffee_milk.gd" id="8_eqgwy"]
+[ext_resource type="AudioStream" uid="uid://b3ayo1g6a0mpo" path="res://assets/sounds/error.wav" id="10_f6eo0"]
+[ext_resource type="Texture2D" uid="uid://bq5rvwcf37psg" path="res://assets/sprites/coffee_minigame/new_assets/coffeemachine.png" id="10_hhtbo"]
+[ext_resource type="Script" uid="uid://cn73j4sg4ag41" path="res://scripts/chocolate_syrup.gd" id="10_kff00"]
+[ext_resource type="Script" uid="uid://2bdjjyginwg8" path="res://scripts/strawberry_syrup.gd" id="12_f3amd"]
+[ext_resource type="Texture2D" uid="uid://congxw2d8gve2" path="res://assets/sprites/coffee_minigame/new_assets/milk.png" id="12_lk5mw"]
+[ext_resource type="Texture2D" uid="uid://b5x4seud5ilbi" path="res://assets/sprites/coffee_minigame/new_assets/coffeemachine_hover.png" id="13_w62u5"]
+[ext_resource type="Texture2D" uid="uid://ctu3mm6itey1o" path="res://assets/sprites/coffee_minigame/new_assets/chocosyrup.png" id="14_1fdbf"]
+[ext_resource type="Script" uid="uid://cs0l1oly76y3y" path="res://scripts/vanilla_syrup.gd" id="14_f3amd"]
+[ext_resource type="Script" uid="uid://bm752l8kdqcvu" path="res://scripts/trash.gd" id="16_qw0w7"]
+[ext_resource type="Texture2D" uid="uid://cklsfi48m4m7f" path="res://assets/sprites/coffee_minigame/new_assets/strawberrysyrup.png" id="16_yy6xq"]
+[ext_resource type="Script" uid="uid://6o2b5gtatv4v" path="res://scripts/serve.gd" id="18_dilnk"]
+[ext_resource type="Texture2D" uid="uid://bx5ti3d0g5xge" path="res://assets/sprites/coffee_minigame/new_assets/vanillasyrup.png" id="18_lrpmp"]
+[ext_resource type="Texture2D" uid="uid://8lmfeiwmkuwj" path="res://assets/sprites/coffee_minigame/serve.png" id="19_8uys3"]
+[ext_resource type="Texture2D" uid="uid://bvwcnbsliuhxv" path="res://assets/sprites/coffee_minigame/new_assets/trashcan.png" id="20_ybhe4"]
+[ext_resource type="Texture2D" uid="uid://dtcmk0d2d41dy" path="res://assets/sprites/coffee_minigame/new_assets/trash_hover.png" id="25_ybhe4"]
+[ext_resource type="Texture2D" uid="uid://4e56h1nsgc0" path="res://assets/sprites/coffee_minigame/new_assets/serve_button_hover44.png" id="26_yy6xq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdge3"]
+size = Vector2(140, 112)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13anl"]
+size = Vector2(112, 112)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhgqp"]
+size = Vector2(329, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67dsn"]
+size = Vector2(15.75, 31.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3amd"]
+size = Vector2(11.75, 27.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dilnk"]
+size = Vector2(13.875, 20.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxvqg"]
+size = Vector2(37.8334, 16.5)
+
+[node name="coffee_minigame" type="Node2D"]
+script = ExtResource("1_gxvqg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+autoplay = true
+
+[node name="bg" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_f6eo0")
+
+[node name="note1" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_1fdbf")
+
+[node name="note2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 189.0
+offset_top = -46.0
+offset_right = 5189.0
+offset_bottom = 4954.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_yy6xq")
+
+[node name="note3" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 876.0
+offset_top = -1.0
+offset_right = 5876.0
+offset_bottom = 4999.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_lrpmp")
+
+[node name="coffee_cup" type="Area2D" parent="."]
+unique_name_in_owner = true
+z_index = 1
+position = Vector2(142, 452)
+script = ExtResource("1_67dsn")
+
+[node name="cup_sprite" type="Sprite2D" parent="coffee_cup"]
+unique_name_in_owner = true
+z_index = 1
+texture_filter = 1
+position = Vector2(64, 64)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_hhtbo")
+script = ExtResource("3_67dsn")
+
+[node name="cup_button" type="Button" parent="coffee_cup/cup_sprite"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1733.0
+offset_top = -600.0
+offset_right = 1300.0
+offset_bottom = 1367.0
+
+[node name="error_sound" type="AudioStreamPlayer2D" parent="coffee_cup/cup_sprite"]
+position = Vector2(47.2556, 3.83113)
+stream = ExtResource("10_f6eo0")
+
+[node name="cup_CollisionShape2D" type="CollisionShape2D" parent="coffee_cup"]
+z_index = 1
+position = Vector2(68, 64)
+shape = SubResource("RectangleShape2D_vdge3")
+
+[node name="coffee_plate" type="Area2D" parent="."]
+position = Vector2(553, 371)
+script = ExtResource("4_67dsn")
+
+[node name="plate_Sprite2D" type="Sprite2D" parent="coffee_plate"]
+visible = false
+position = Vector2(5, 91)
+scale = Vector2(8, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coffee_plate"]
+position = Vector2(8, 82)
+shape = SubResource("RectangleShape2D_13anl")
+
+[node name="coffeemachine_hover" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(606, 353)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("13_w62u5")
+
+[node name="coffee_machine" type="Area2D" parent="."]
+position = Vector2(225, -20)
+script = ExtResource("6_3u56a")
+
+[node name="Sprite2D" type="Sprite2D" parent="coffee_machine"]
+texture_filter = 1
+position = Vector2(381, 367)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_hhtbo")
+
+[node name="machine_button" type="Button" parent="coffee_machine/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1333.0
+offset_top = -1680.0
+offset_right = 720.0
+offset_bottom = -1180.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coffee_machine"]
+position = Vector2(334.5, 145)
+shape = SubResource("RectangleShape2D_yhgqp")
+
+[node name="coffeemachinetimer" type="Timer" parent="coffee_machine"]
+wait_time = 0.5
+one_shot = true
+
+[node name="coffee_milk" type="Area2D" parent="."]
+position = Vector2(922, 328)
+scale = Vector2(8, 8)
+script = ExtResource("8_eqgwy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coffee_milk"]
+position = Vector2(-0.125, 0)
+shape = SubResource("RectangleShape2D_67dsn")
+
+[node name="Sprite2D" type="Sprite2D" parent="coffee_milk"]
+texture_filter = 1
+position = Vector2(-0.875, -0.875)
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("12_lk5mw")
+
+[node name="milk_button" type="Button" parent="coffee_milk/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -804.0
+offset_top = -1571.0
+offset_right = 964.0
+offset_bottom = 1929.0
+
+[node name="milktimer" type="Timer" parent="coffee_milk"]
+wait_time = 0.2
+one_shot = true
+
+[node name="chocolate_syrup" type="Area2D" parent="."]
+position = Vector2(318, 331)
+scale = Vector2(6, 6)
+script = ExtResource("10_kff00")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chocolate_syrup"]
+position = Vector2(-0.875, 1.91667)
+shape = SubResource("RectangleShape2D_f3amd")
+
+[node name="Sprite2D" type="Sprite2D" parent="chocolate_syrup"]
+texture_filter = 1
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("14_1fdbf")
+
+[node name="chocolate_button" type="Button" parent="chocolate_syrup/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1024.0
+offset_top = -929.0
+offset_right = 476.0
+offset_bottom = 1595.0
+
+[node name="chocolatetimer" type="Timer" parent="chocolate_syrup"]
+wait_time = 0.2
+one_shot = true
+
+[node name="strawberry_syrup" type="Area2D" parent="."]
+position = Vector2(201, 324)
+scale = Vector2(6, 6)
+script = ExtResource("12_f3amd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strawberry_syrup"]
+position = Vector2(0.125, 0.5)
+shape = SubResource("RectangleShape2D_f3amd")
+
+[node name="Sprite2D" type="Sprite2D" parent="strawberry_syrup"]
+texture_filter = 1
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("16_yy6xq")
+
+[node name="strawberry_button" type="Button" parent="strawberry_syrup/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -881.0
+offset_top = -1048.0
+offset_right = 619.0
+offset_bottom = 1643.0
+
+[node name="strawberrytimer" type="Timer" parent="strawberry_syrup"]
+wait_time = 0.2
+one_shot = true
+
+[node name="vanilla_syrup" type="Area2D" parent="."]
+position = Vector2(73, 325)
+scale = Vector2(6, 6)
+script = ExtResource("14_f3amd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vanilla_syrup"]
+position = Vector2(0.125, 0.916668)
+shape = SubResource("RectangleShape2D_f3amd")
+
+[node name="Sprite2D" type="Sprite2D" parent="vanilla_syrup"]
+texture_filter = 1
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("18_lrpmp")
+
+[node name="vanilla_button" type="Button" parent="vanilla_syrup/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -952.0
+offset_top = -1095.0
+offset_right = 595.0
+offset_bottom = 1881.0
+
+[node name="vanillatimer" type="Timer" parent="vanilla_syrup"]
+wait_time = 0.2
+one_shot = true
+
+[node name="trash" type="Area2D" parent="."]
+position = Vector2(1050, 550)
+scale = Vector2(8, 8)
+script = ExtResource("16_qw0w7")
+
+[node name="Sprite2D" type="Sprite2D" parent="trash"]
+texture_filter = 1
+position = Vector2(-1.125, -4.625)
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("20_ybhe4")
+
+[node name="Button" type="Button" parent="trash/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -893.0
+offset_top = -946.0
+offset_right = 946.0
+offset_bottom = 1893.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trash"]
+position = Vector2(-1.125, -1)
+shape = SubResource("RectangleShape2D_dilnk")
+
+[node name="trash_hover" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1040, 513)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("25_ybhe4")
+
+[node name="serve" type="Area2D" parent="."]
+position = Vector2(571, 576)
+scale = Vector2(6, 6)
+script = ExtResource("18_dilnk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="serve"]
+position = Vector2(-0.583336, 0.0833359)
+shape = SubResource("RectangleShape2D_gxvqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="serve"]
+texture_filter = 1
+position = Vector2(1.667, -18)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("19_8uys3")
+
+[node name="serve_button" type="Button" parent="serve/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.481
+anchor_top = 0.681
+anchor_right = 0.481
+anchor_bottom = 0.681
+offset_left = -3513.0
+offset_top = -2947.0
+offset_right = -1513.0
+offset_bottom = -2055.0
+
+[node name="serve_hover" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(570, 581)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("26_yy6xq")
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="button_down" from="coffee_cup/cup_sprite/cup_button" to="coffee_cup" method="_on_button_button_down"]
+[connection signal="button_up" from="coffee_cup/cup_sprite/cup_button" to="coffee_cup" method="_on_button_button_up"]
+[connection signal="area_entered" from="coffee_plate" to="coffee_cup" method="_on_coffee_plate_area_entered"]
+[connection signal="area_entered" from="coffee_plate" to="chocolate_syrup" method="_on_coffee_plate_area_entered"]
+[connection signal="area_entered" from="coffee_plate" to="strawberry_syrup" method="_on_coffee_plate_area_entered"]
+[connection signal="area_entered" from="coffee_plate" to="vanilla_syrup" method="_on_coffee_plate_area_entered"]
+[connection signal="area_exited" from="coffee_plate" to="coffee_cup" method="_on_coffee_plate_area_exited"]
+[connection signal="area_exited" from="coffee_plate" to="chocolate_syrup" method="_on_coffee_plate_area_exited"]
+[connection signal="area_exited" from="coffee_plate" to="strawberry_syrup" method="_on_coffee_plate_area_exited"]
+[connection signal="area_exited" from="coffee_plate" to="vanilla_syrup" method="_on_coffee_plate_area_exited"]
+[connection signal="mouse_entered" from="coffee_plate" to="coffee_cup" method="_on_coffee_plate_mouse_entered"]
+[connection signal="mouse_entered" from="coffee_plate" to="coffee_plate" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="coffee_plate" to="coffee_cup" method="_on_coffee_plate_mouse_exited"]
+[connection signal="mouse_entered" from="coffee_machine/Sprite2D/machine_button" to="." method="_on_machine_button_mouse_entered"]
+[connection signal="mouse_exited" from="coffee_machine/Sprite2D/machine_button" to="." method="_on_machine_button_mouse_exited"]
+[connection signal="pressed" from="coffee_machine/Sprite2D/machine_button" to="coffee_machine" method="_on_button_pressed"]
+[connection signal="timeout" from="coffee_machine/coffeemachinetimer" to="coffee_cup/cup_sprite" method="_on_coffeemachinetimer_timeout"]
+[connection signal="timeout" from="coffee_machine/coffeemachinetimer" to="coffee_machine" method="_on_coffeemachinetimer_timeout"]
+[connection signal="area_entered" from="coffee_milk" to="coffee_milk" method="_on_area_entered"]
+[connection signal="area_exited" from="coffee_milk" to="coffee_milk" method="_on_area_exited"]
+[connection signal="button_down" from="coffee_milk/Sprite2D/milk_button" to="coffee_milk" method="_on_milk_button_button_down"]
+[connection signal="button_up" from="coffee_milk/Sprite2D/milk_button" to="coffee_milk" method="_on_milk_button_button_up"]
+[connection signal="pressed" from="coffee_milk/Sprite2D/milk_button" to="coffee_milk" method="_on_milk_button_pressed"]
+[connection signal="timeout" from="coffee_milk/milktimer" to="coffee_cup/cup_sprite" method="_on_milktimer_timeout"]
+[connection signal="timeout" from="coffee_milk/milktimer" to="coffee_milk" method="_on_milktimer_timeout"]
+[connection signal="button_down" from="chocolate_syrup/Sprite2D/chocolate_button" to="chocolate_syrup" method="_on_chocolate_button_button_down"]
+[connection signal="button_up" from="chocolate_syrup/Sprite2D/chocolate_button" to="chocolate_syrup" method="_on_chocolate_button_button_up"]
+[connection signal="timeout" from="chocolate_syrup/chocolatetimer" to="chocolate_syrup" method="_on_timer_timeout"]
+[connection signal="button_down" from="strawberry_syrup/Sprite2D/strawberry_button" to="strawberry_syrup" method="_on_strawberry_button_button_down"]
+[connection signal="button_up" from="strawberry_syrup/Sprite2D/strawberry_button" to="strawberry_syrup" method="_on_strawberry_button_button_up"]
+[connection signal="timeout" from="strawberry_syrup/strawberrytimer" to="strawberry_syrup" method="_on_strawberrytimer_timeout"]
+[connection signal="button_down" from="vanilla_syrup/Sprite2D/vanilla_button" to="vanilla_syrup" method="_on_vanilla_button_button_down"]
+[connection signal="button_up" from="vanilla_syrup/Sprite2D/vanilla_button" to="vanilla_syrup" method="_on_vanilla_button_button_up"]
+[connection signal="timeout" from="vanilla_syrup/vanillatimer" to="vanilla_syrup" method="_on_vanillatimer_timeout"]
+[connection signal="mouse_entered" from="trash/Sprite2D/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="trash/Sprite2D/Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="trash/Sprite2D/Button" to="trash" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="serve/Sprite2D/serve_button" to="." method="_on_serve_button_mouse_entered"]
+[connection signal="mouse_exited" from="serve/Sprite2D/serve_button" to="." method="_on_serve_button_mouse_exited"]
+[connection signal="pressed" from="serve/Sprite2D/serve_button" to="." method="_on_serve_button_pressed"]
+[connection signal="pressed" from="serve/Sprite2D/serve_button" to="serve" method="_on_serve_button_pressed"]

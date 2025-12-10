@@ -1,0 +1,371 @@
+[gd_scene load_steps=39 format=3 uid="uid://pwjq3agk8sd"]
+
+[ext_resource type="Script" uid="uid://bf3q7o152j88x" path="res://scripts/player.gd" id="1_da8xo"]
+[ext_resource type="Script" uid="uid://dc6210jg0qjy0" path="res://scripts/3d_control.gd" id="1_gqk5c"]
+[ext_resource type="Texture2D" uid="uid://gskvrr0sc3qh" path="res://assets/sprites/endings/good_ending.png" id="2_4j3bx"]
+[ext_resource type="Script" uid="uid://cch1yj2sn7eai" path="res://scripts/npc.gd" id="2_gqk5c"]
+[ext_resource type="Script" uid="uid://bpti484c4846p" path="res://scripts/coffee_machine_3d.gd" id="3_io1gi"]
+[ext_resource type="Texture2D" uid="uid://blrbxyaqvgqyc" path="res://assets/sprites/endings/bad_ending.png" id="3_jv4he"]
+[ext_resource type="Script" uid="uid://rxggklcwkagp" path="res://scripts/npc_entrance.gd" id="4_aw15n"]
+[ext_resource type="PackedScene" uid="uid://bglk7n5ec18in" path="res://scenes/Cafe.glb" id="5_io1gi"]
+[ext_resource type="Texture2D" uid="uid://dfux8cgxwhnxo" path="res://assets/sprites/npcs/kid1.png" id="6_s25k7"]
+[ext_resource type="Texture2D" uid="uid://dorxiswwsg6aq" path="res://assets/sprites/gothwoman.png" id="7_4j3bx"]
+[ext_resource type="Texture2D" uid="uid://xxyuv7p7rxwy" path="res://assets/sprites/npcs/womandog.png" id="7_t6jrm"]
+[ext_resource type="Texture2D" uid="uid://o78jcs1ayn5h" path="res://assets/sprites/npcs/programmer.png" id="8_1fqjn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0rql1"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_166uu"]
+sky_material = SubResource("ProceduralSkyMaterial_0rql1")
+
+[sub_resource type="Environment" id="Environment_68u10"]
+background_mode = 2
+sky = SubResource("Sky_166uu")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0rql1"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_166uu"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_68u10"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_68u10"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_da8xo"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_68u10"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_da8xo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_da8xo"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_68u10"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1fqjn"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_otws4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4j3bx"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gqk5c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_io1gi"]
+albedo_color = Color(0.588235, 0.27451, 0, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_aw15n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aw15n"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_68u10"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_68u10"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s25k7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s25k7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_t6jrm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t6jrm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1fqjn"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="3d_control" type="Control" parent="." node_paths=PackedStringArray("npc_entrance1", "npc_entrance2", "npc_entrance3", "npc_entrance4")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gqk5c")
+npc_entrance1 = NodePath("../NPC/EntranceBehaviour")
+npc_entrance2 = NodePath("../NPC2/EntranceBehaviour2")
+npc_entrance3 = NodePath("../NPC3/EntranceBehaviour3")
+npc_entrance4 = NodePath("../NPC4/EntranceBehaviour4")
+
+[node name="BlackOverlay" type="ColorRect" parent="3d_control"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -7.0
+offset_right = 1161.0
+offset_bottom = 660.0
+color = Color(0, 0, 0, 1)
+
+[node name="final_timer" type="Timer" parent="3d_control"]
+unique_name_in_owner = true
+wait_time = 20.0
+one_shot = true
+
+[node name="good_ending" type="Sprite2D" parent="3d_control"]
+position = Vector2(576, 324)
+scale = Vector2(75, 75)
+texture = ExtResource("2_4j3bx")
+
+[node name="bad_ending" type="Sprite2D" parent="3d_control"]
+position = Vector2(576, 324)
+scale = Vector2(75, 75)
+texture = ExtResource("3_jv4he")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_68u10")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="TestGround" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0rql1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestGround"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestGround/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_166uu")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 0)
+script = ExtResource("1_da8xo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("CapsuleMesh_68u10")
+surface_material_override/0 = SubResource("StandardMaterial3D_68u10")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("ConvexPolygonShape3D_da8xo")
+
+[node name="Neck" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.406599, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Neck"]
+
+[node name="RayCast3D" type="RayCast3D" parent="Player/Neck/Camera3D"]
+transform = Transform3D(1.333, 0, 0, 0, -1.74846e-07, -1.333, 0, 4, -5.82673e-08, 0, 0, 0)
+
+[node name="NPC" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3266, 0.845878, -6.90921)
+script = ExtResource("2_gqk5c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC"]
+transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 2, 0, 0, 0.4)
+shape = SubResource("CapsuleShape3D_68u10")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC"]
+transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 2, 0, 0, 0.4)
+visible = false
+mesh = SubResource("CapsuleMesh_da8xo")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_da8xo")
+
+[node name="EntranceBehaviour" type="Node3D" parent="NPC" node_paths=PackedStringArray("entrance_marker", "target_marker")]
+unique_name_in_owner = true
+script = ExtResource("4_aw15n")
+entrance_marker = NodePath("../../Cafe/EntranceMarker")
+target_marker = NodePath("../../Cafe/TargetMarker")
+
+[node name="Sprite3D" type="Sprite3D" parent="NPC"]
+pixel_size = 0.0013
+billboard = 1
+texture = ExtResource("7_4j3bx")
+
+[node name="InteractArea" type="Area3D" parent="NPC"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC/InteractArea"]
+transform = Transform3D(6.29, 0, 0, 0, 6.29, 0, 0, 0, 6.29, 0, 0, 0)
+shape = SubResource("SphereShape3D_68u10")
+
+[node name="NPC2" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.327, 0.846, -6.909)
+script = ExtResource("2_gqk5c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC2"]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_1fqjn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC2"]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_da8xo")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_da8xo")
+
+[node name="EntranceBehaviour2" type="Node3D" parent="NPC2" node_paths=PackedStringArray("entrance_marker", "target_marker")]
+unique_name_in_owner = true
+script = ExtResource("4_aw15n")
+entrance_marker = NodePath("../../Cafe/EntranceMarker")
+target_marker = NodePath("../../Cafe/TargetMarker")
+
+[node name="Sprite3D" type="Sprite3D" parent="NPC2"]
+pixel_size = 0.0013
+billboard = 1
+texture = ExtResource("6_s25k7")
+
+[node name="InteractArea" type="Area3D" parent="NPC2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC2/InteractArea"]
+transform = Transform3D(6.29, 0, 0, 0, 6.29, 0, 0, 0, 6.29, 0, 0, 0)
+shape = SubResource("SphereShape3D_68u10")
+
+[node name="NPC3" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.327, 0.846, -6.909)
+script = ExtResource("2_gqk5c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC3"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 1.5, 0, 0, 0.2)
+shape = SubResource("CapsuleShape3D_otws4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC3"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 1.5, 0, 0, 0.2)
+visible = false
+mesh = SubResource("CapsuleMesh_da8xo")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_da8xo")
+
+[node name="EntranceBehaviour3" type="Node3D" parent="NPC3" node_paths=PackedStringArray("entrance_marker", "target_marker")]
+unique_name_in_owner = true
+script = ExtResource("4_aw15n")
+entrance_marker = NodePath("../../Cafe/EntranceMarker")
+target_marker = NodePath("../../Cafe/TargetMarker")
+
+[node name="NPC3_Sprite3D" type="Sprite3D" parent="NPC3"]
+unique_name_in_owner = true
+pixel_size = 0.0013
+billboard = 1
+texture = ExtResource("7_t6jrm")
+
+[node name="InteractArea" type="Area3D" parent="NPC3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC3/InteractArea"]
+transform = Transform3D(6.29, 0, 0, 0, 6.29, 0, 0, 0, 6.29, 0, 0, 0)
+shape = SubResource("SphereShape3D_68u10")
+
+[node name="NPC4" type="CharacterBody3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.327, 0.846, -7.909)
+script = ExtResource("2_gqk5c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC4"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 1.5, 0, 0, 0.3)
+shape = SubResource("CapsuleShape3D_4j3bx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC4"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 1.5, 0, 0, 0.3)
+visible = false
+mesh = SubResource("CapsuleMesh_da8xo")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_da8xo")
+
+[node name="EntranceBehaviour4" type="Node3D" parent="NPC4" node_paths=PackedStringArray("entrance_marker", "target_marker")]
+unique_name_in_owner = true
+script = ExtResource("4_aw15n")
+entrance_marker = NodePath("../../Cafe/EntranceMarker")
+target_marker = NodePath("../../Cafe/TargetMarker")
+
+[node name="Sprite3D" type="Sprite3D" parent="NPC4"]
+pixel_size = 0.0013
+billboard = 1
+texture = ExtResource("8_1fqjn")
+
+[node name="InteractArea" type="Area3D" parent="NPC4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC4/InteractArea"]
+transform = Transform3D(6.29, 0, 0, 0, 6.29, 0, 0, 0, 6.29, 0, 0, 0)
+shape = SubResource("SphereShape3D_68u10")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InteractText" type="Label" parent="CanvasLayer/BoxContainer"]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "Press [E] to interact"
+
+[node name="CoffeeMachine3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 5, 2.2, 2.7)
+script = ExtResource("3_io1gi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CoffeeMachine3D"]
+visible = false
+mesh = SubResource("CapsuleMesh_gqk5c")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_io1gi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CoffeeMachine3D"]
+shape = SubResource("CapsuleShape3D_aw15n")
+
+[node name="Cafe" parent="." instance=ExtResource("5_io1gi")]
+transform = Transform3D(0.146594, 0, -1.77395, 0, 1.78, 0, 1.77395, 0, 0.146594, 0.289484, 0.010272, 1.56562)
+
+[node name="EntranceMarker" type="Node3D" parent="Cafe"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.409, 0.7, -0.936)
+
+[node name="TargetMarker" type="Node3D" parent="Cafe"]
+transform = Transform3D(0.72447, 0.379003, 0.52538, -2.51004e-08, 0.812083, -0.581264, -0.618821, 0.443708, 0.615076, 0.042, 0.7, -1.523)
+
+[node name="wall_front" type="StaticBody3D" parent="."]
+transform = Transform3D(0.498097, 0, 1.30734, 0, 3, 0, -0.0435779, 0, 14.9429, 4.9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_front"]
+shape = SubResource("BoxShape3D_aw15n")
+
+[node name="notvisible_debuggingonly" type="MeshInstance3D" parent="wall_front"]
+mesh = SubResource("BoxMesh_68u10")
+
+[node name="wall_left" type="StaticBody3D" parent="."]
+transform = Transform3D(4.98097, 0, 0.0435779, 0, 7, 0, -0.435779, 0, 0.498097, 6, 0, 3.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_left"]
+shape = SubResource("BoxShape3D_68u10")
+
+[node name="notvisible_debuggingonly" type="MeshInstance3D" parent="wall_left"]
+visible = false
+mesh = SubResource("BoxMesh_s25k7")
+
+[node name="wall_back" type="StaticBody3D" parent="."]
+transform = Transform3D(0.498097, 0, 1.30734, 0, 7, 0, -0.0435779, 0, 14.9429, 7.2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_back"]
+shape = SubResource("BoxShape3D_s25k7")
+
+[node name="notvisible_debuggingonly" type="MeshInstance3D" parent="wall_back"]
+visible = false
+mesh = SubResource("BoxMesh_t6jrm")
+
+[node name="wall_right" type="StaticBody3D" parent="."]
+transform = Transform3D(9.97564, 0, 0.0348782, 0, 7, 0, -0.697565, 0, 0.498782, 7, 0, -4.8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_right"]
+shape = SubResource("BoxShape3D_t6jrm")
+
+[node name="notvisible_debuggingonly" type="MeshInstance3D" parent="wall_right"]
+visible = false
+mesh = SubResource("BoxMesh_1fqjn")
+
+[connection signal="timeout" from="3d_control/final_timer" to="3d_control" method="_on_final_timer_timeout"]
+[connection signal="npc_entered" from="NPC/EntranceBehaviour" to="3d_control" method="_on_entrance_behaviour_npc_entered"]
+[connection signal="npc_entered" from="NPC2/EntranceBehaviour2" to="3d_control" method="_on_entrance_behaviour_npc_entered"]
+[connection signal="npc_entered" from="NPC3/EntranceBehaviour3" to="3d_control" method="_on_entrance_behaviour_npc_entered"]
+[connection signal="npc_entered" from="NPC4/EntranceBehaviour4" to="3d_control" method="_on_entrance_behaviour_npc_entered"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dfy7rmcjdjjh"
+path="res://.godot/imported/00_letter_mum.dialogue-b19d14f59bd2c4305a12e1a7e02e5f6a.tres"
+
+[deps]
+
+source_file="res://dialogues/00_letter_mum.dialogue"
+dest_files=["res://.godot/imported/00_letter_mum.dialogue-b19d14f59bd2c4305a12e1a7e02e5f6a.tres"]
+
+[params]
+
+defaults=true

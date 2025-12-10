@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_agh2b"]
+
+[resource]
+script = ExtResource("1_agh2b")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("NPC", "You")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "NPC",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hello. What an interesting cafe you have here.",
+&"type": "dialogue"
+},
+"10": {
+&"character": "You",
+&"id": "10",
+&"next_id": "11",
+&"text": "I'll do my best!",
+&"type": "dialogue"
+},
+"11": {
+&"character": "NPC",
+&"id": "11",
+&"next_id": "14",
+&"text": "Don't act like making coffee is that difficult.",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "1",
+&"text": "Restart",
+&"type": "response"
+},
+"13": {
+&"id": "13",
+&"next_id": "end",
+&"text": "End the conversation",
+&"type": "response"
+},
+"14": {
+&"id": "14",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"15": {
+&"id": "15",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "NPC",
+&"id": "2",
+&"next_id": "3",
+&"text": "One coffee please. As black as possible.",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"responses": PackedStringArray("3", "6", "9", "12", "13"),
+&"text": "Coming right up!",
+&"type": "response"
+},
+"4": {
+&"character": "You",
+&"id": "4",
+&"next_id": "5",
+&"text": "Coming right up!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "NPC",
+&"id": "5",
+&"next_id": "14",
+&"text": "I hope so...",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Why so bitter?",
+&"type": "response"
+},
+"7": {
+&"character": "You",
+&"id": "7",
+&"next_id": "8",
+&"text": "Why so bitter?",
+&"type": "dialogue"
+},
+"8": {
+&"character": "NPC",
+&"id": "8",
+&"next_id": "14",
+&"text": "Stop asking questions. Just do it.",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"text": "I'll do my best!",
+&"type": "response"
+}
+}
+raw_text = "~ start
+NPC: Hello. What an interesting cafe you have here.
+NPC: One coffee please. As black as possible.
+- Coming right up!
+	You: Coming right up!
+	NPC: I hope so...
+- Why so bitter?
+	You: Why so bitter?
+	NPC: Stop asking questions. Just do it.
+- I'll do my best!
+	You: I'll do my best!
+	NPC: Don't act like making coffee is that difficult.
+- Restart => start
+- End the conversation => END
+=> END"
+metadata/dialogue_manager_version = "3.9.0"

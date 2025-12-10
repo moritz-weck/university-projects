@@ -1,0 +1,195 @@
+[gd_scene load_steps=10 format=3 uid="uid://dyeudd0qx70jm"]
+
+[ext_resource type="Script" uid="uid://bf0kril80bfjt" path="res://scripts/options.gd" id="1_e6vpq"]
+[ext_resource type="Texture2D" uid="uid://dp5osb87le1n5" path="res://assets/sprites/options/options_minus_0.png" id="1_kv8mn"]
+[ext_resource type="Texture2D" uid="uid://cvw5pr8kgmdtu" path="res://assets/sprites/options/options_minus_1.png" id="2_1sggn"]
+[ext_resource type="Texture2D" uid="uid://dtapsvlplmj0n" path="res://assets/sprites/options/options_plus_0.png" id="3_e6vpq"]
+[ext_resource type="Texture2D" uid="uid://sep1k8i8fgfn" path="res://assets/sprites/options/options_plus_1.png" id="4_o7i7e"]
+[ext_resource type="Texture2D" uid="uid://dghggntlkerts" path="res://assets/sprites/options/optionbar_05.png" id="6_o7i7e"]
+[ext_resource type="Texture2D" uid="uid://bgwwotc7bpyx4" path="res://assets/sprites/menu/exit_0.png" id="7_uon5e"]
+[ext_resource type="Texture2D" uid="uid://dfqhxogyrwanl" path="res://assets/sprites/menu/exit_1.png" id="8_85aq5"]
+
+[sub_resource type="FontFile" id="FontFile_uon5e"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/48/0/ascent = 0.0
+cache/0/48/0/descent = 0.0
+cache/0/48/0/underline_position = 0.0
+cache/0/48/0/underline_thickness = 0.0
+cache/0/48/0/scale = 1.0
+
+[node name="options_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e6vpq")
+
+[node name="volume_minus" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -416.0
+offset_top = -190.0
+offset_right = -408.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+texture_normal = ExtResource("1_kv8mn")
+texture_hover = ExtResource("2_1sggn")
+
+[node name="volume_plus" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 284.0
+offset_top = -190.0
+offset_right = 292.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+texture_normal = ExtResource("3_e6vpq")
+texture_hover = ExtResource("4_o7i7e")
+
+[node name="volumebar" type="Area2D" parent="."]
+position = Vector2(560, 182)
+scale = Vector2(12, 12)
+
+[node name="volumebar_sprite" type="Sprite2D" parent="volumebar"]
+texture = ExtResource("6_o7i7e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="volumebar"]
+
+[node name="sensitivity_minus" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -416.0
+offset_top = 10.0
+offset_right = -408.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+texture_normal = ExtResource("1_kv8mn")
+texture_hover = ExtResource("2_1sggn")
+
+[node name="sensitivity_plus" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 284.0
+offset_top = 10.0
+offset_right = 292.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+texture_normal = ExtResource("3_e6vpq")
+texture_hover = ExtResource("4_o7i7e")
+
+[node name="sensitivitybar" type="Area2D" parent="."]
+position = Vector2(560, 382)
+scale = Vector2(12, 12)
+
+[node name="sensitivitybar_sprite" type="Sprite2D" parent="sensitivitybar"]
+texture = ExtResource("6_o7i7e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sensitivitybar"]
+
+[node name="exit_button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 224.0
+offset_top = 164.0
+offset_right = 256.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(8, 8)
+texture_normal = ExtResource("7_uon5e")
+texture_hover = ExtResource("8_85aq5")
+
+[node name="Volume_Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 90.0
+offset_right = 473.0
+offset_bottom = 138.0
+theme_override_fonts/font = SubResource("FontFile_uon5e")
+theme_override_font_sizes/font_size = 48
+text = "VOLUME"
+
+[node name="Sensitivity_Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 290.0
+offset_right = 532.0
+offset_bottom = 338.0
+theme_override_fonts/font = SubResource("FontFile_uon5e")
+theme_override_font_sizes/font_size = 48
+text = "SENSITIVITY"
+
+[connection signal="pressed" from="volume_minus" to="." method="_on_volume_minus_pressed"]
+[connection signal="pressed" from="volume_plus" to="." method="_on_volume_plus_pressed"]
+[connection signal="pressed" from="sensitivity_minus" to="." method="_on_sensitivity_minus_pressed"]
+[connection signal="pressed" from="sensitivity_plus" to="." method="_on_sensitivity_plus_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

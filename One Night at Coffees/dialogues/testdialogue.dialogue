@@ -1,0 +1,15 @@
+~ start
+NPC: Hello. What an interesting cafe you have here.
+NPC: One coffee please. As black as possible.
+- Coming right up!
+	You: Coming right up!
+	NPC: I hope so...
+- Why so bitter?
+	You: Why so bitter?
+	NPC: Stop asking questions. Just do it.
+- I'll do my best!
+	You: I'll do my best!
+	NPC: Don't act like making coffee is that difficult.
+- Restart => start
+- End the conversation => END
+=> END
