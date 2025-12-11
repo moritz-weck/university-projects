@@ -33,7 +33,7 @@ It is important to note that, due to the small scope of the game, the implementa
 
 ### Used Files
 All 2D textures were self-made, many of them hand-drawn. <br>
-The 3D environment was made freely available <a href="Link">here</a>.
+The 3D environment was made by <a href="https://sketchfab.com/fangzhangmnm">fangzhangmnm</a> and can be found on <a href="https://sketchfab.com/3d-models/anime-cafe-1d4f3b7b7d5842d993fe2775d57aa33f">Sektchfab</a>. <br>
 We also used the <a href="https://github.com/nathanhoad/godot_dialogue_manager">Godot Dialogue Manager</a> by <a href="https://github.com/nathanhoad">nathanhoad</a>.
 
 ---
@@ -69,5 +69,5 @@ Wichtig anzumerken ist, dass aufgrund der kleinen umfang des Spiels, die Impleme
 
 ### Verwendete Dateien
 Jegliche 2D-Texturen sind selbstgemacht, viele davon mit der Hand gezeichnet. <br>
-Die 3D-Umgebung wurde <a href="Link">hier</a> frei zur Verfügung gestellt. <br>
+Die 3D-Umgebung wurde von <a href="https://sketchfab.com/fangzhangmnm">fangzhangmnm</a> erstellt und kann auf <a href="https://sketchfab.com/3d-models/anime-cafe-1d4f3b7b7d5842d993fe2775d57aa33f">Sektchfab</a> gefunden werden. <br>
 Es wurde außerdem der <a href="https://github.com/nathanhoad/godot_dialogue_manager">Godot Dialogue Manager</a> von <a href="https://github.com/nathanhoad">nathanhoad</a> verwendet.
